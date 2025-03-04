@@ -1,6 +1,6 @@
 package edu.iuh.fit.donchung.designPattern01.state;
 
-public class ChucVuContext implements ChucVu{
+public class NhanVienContext implements ChucVu{
     private ChucVu chucVu;
 
     public ChucVu getChucVu() {

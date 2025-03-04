@@ -2,21 +2,21 @@ package edu.iuh.fit.donchung.designPattern01.state;
 
 public class Run {
     public static void main(String[] args) {
-        ChucVuContext chucVuContext = new ChucVuContext();
+        NhanVienContext nhanVienContext = new NhanVienContext();
 
         // Set GiamDocState
         ChucVu giamDoc = new GiamDocState();
-        chucVuContext.setChucVu(giamDoc);
+        nhanVienContext.setChucVu(giamDoc);
 
         // Call handlerRequest
-        chucVuContext.handlerRequest();
+        nhanVienContext.handlerRequest();
 
 
         // Set TruongPhongState
         ChucVu keToan = new KeToanTruongState();
-        chucVuContext.setChucVu(keToan);
+        nhanVienContext.setChucVu(keToan);
 
         // Call handlerRequest
-        chucVuContext.handlerRequest();
+        nhanVienContext.handlerRequest();
     }
 }
