@@ -18,14 +18,14 @@ public class Run {
         productsA.add(products.get(0));
         productsA.add(products.get(1));
         productsA.add(products.get(2));
-        Container tableA = new Container(productsA);
+        Component tableA = new Container(productsA);
 
         // Table B
         List<Component> productsB = new ArrayList<>();
         productsB.add(products.get(3));
         productsB.add(products.get(4));
         productsB.add(products.get(5));
-        Container tableB = new Container(productsB);
+        Component tableB = new Container(productsB);
 
         // TCCare
         Component tcCare = new Container(
